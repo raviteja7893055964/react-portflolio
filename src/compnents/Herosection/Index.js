@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import { Bio } from '../../data/Constants';
 import Typewriter from "typewriter-effect";
-import Image from "../../Images/Raviteja.jpg";
+import Image from "../../Images/Teja.jpg";
 import { Outlet } from 'react-router-dom';
 
 
