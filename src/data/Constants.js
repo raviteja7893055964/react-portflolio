@@ -186,11 +186,12 @@ export const Bio = {
   export const projects = [
   {
       id: 0,
-      title: "Currency Converter",
+      title: "Currency Converter💸",
     description:"This is a simple web application for converting currencies using HTML, CSS, and jQuery. It allows the user to select a currency to convert from and to, enter an amount, and see the converted amount. This project aims to provide a user-friendly interface for converting currencies using real-time exchange rates.",
           image:
         "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
       tags: ["HTML", "CSS", "Javascript"],
+      url:"https://github.com/raviteja7893055964/Currency_converter"
      
 },
     {
@@ -204,7 +205,22 @@ export const Bio = {
         "Selenium"
         
       ],
+      url:""
    },
+   {
+    id: 2,
+    title: "Hospital Management System🏥",
+    description:
+      "The Hospital management system project built using JDBC and  Mysql. Its using Core java as technology and Mysql as backend to manage the data records. This application follows two tier architecture (which means JDBC driver used to communicate directly with database). Hospital management system project is help to manage patient information which means add, view patients and check whether the patient is exists in database or not and also view and book appointments with doctor for a patient.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    tags: [
+      "Selenium"
+      
+    ],
+    url:"https://github.com/raviteja7893055964/Hospital_Management_System"
+ },
+   
   ];
   
   

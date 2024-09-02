@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import { projects } from '../data/Constants';
 
@@ -27,13 +27,14 @@ margin-bottom: 25px;
 `;
 
 const CardContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    flex-wrap: wrap;
     width: 100%;
-  max-width: 800px;
+    max-width: 1000px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 `;
 
 const Description = styled.div`
@@ -46,6 +47,11 @@ const Description = styled.div`
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    transition: all 0.3s ease;
+    &:hover {
+        -webkit-line-clamp: unset; 
+        color: ${({ theme }) => theme.text_primary +95}; 
+    }
 `;
 const Desc = styled.div`
     font-size: 18px;
@@ -55,11 +61,52 @@ const Desc = styled.div`
     margin-top: 12px;
     
     color: ${({ theme }) => theme.text_secondary};
+    transition: transform 0.3s ease;
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 16px;
     }
 `;
+
+const gitURL = styled.a`
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+    color:${({ theme }) => theme.white};
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    box-shadow:  20px 20px 60px #1F2634,
+    -20px -20px 60px #1F2634;
+    &:hover {
+        transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px #1F2634,
+    filter: brightness(1);
+    }    
+    
+    
+    @media (max-width: 640px) {
+        padding: 12px 0;
+        font-size: 18px;
+    } 
+
+`;
+
+
+
+
 const Projects = ({project}) => {
     console.log(project);
   return (
@@ -68,10 +115,11 @@ const Projects = ({project}) => {
 <CardContainer>
           {projects
             .map((project, index) => (
-                <>
+              <React.Fragment key={index}>
                 <Desc>{project.title}</Desc>
                 <Description>{project.description}</Description>
-                </>
+              <a href={project.url} target='display'>{project.title} GitHub repositiry</a>
+              </React.Fragment>
            ))}
          
         </CardContainer>
