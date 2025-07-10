@@ -202,8 +202,7 @@ export const Bio = {
       image:
         "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
       tags: [
-        "Selenium"
-        
+        "Selenium, Core Java"
       ],
       url:""
    },
@@ -215,12 +214,23 @@ export const Bio = {
     image:
       "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
     tags: [
-      "Selenium"
-      
+      "Core Java, JDBC, MYSQL"
     ],
     url:"https://github.com/raviteja7893055964/Hospital_Management_System"
  },
-   
+   {
+    id: 3,
+    title: "MERN Role-Based Product Managers",
+    description:
+      "Developed a full-stack role-based CRUD application with secure access control for Admin, Manager, and Staff roles. Implemented a secure login/registration system using JWT authentication and Bcrypt for password hashing. Created modular Express routes with middleware to enforce role-based permissions. Integrated role-specific UI logic: \nAdmins: Full CRUD access (create, read, update, delete) for product management.\nManagers: Update and view permissions.\nStaff: Read-only access.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    tags: [
+      "React.js,  Node.js, MongoDB, Express, Javascript"
+      
+    ],
+    url:"https://github.com/raviteja7893055964/MERN_full_stack_application"
+ }
   ];
   
   
