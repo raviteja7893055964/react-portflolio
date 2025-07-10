@@ -5,11 +5,12 @@ import { education } from '../../data/Constants';
 import EducationCard from './EducationCard';
 
 const Container = styled.div`
+    margin-bottom: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index: 1;
+   
     align-items: center;
     padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
