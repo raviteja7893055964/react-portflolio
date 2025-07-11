@@ -7,7 +7,7 @@ export const Bio = {
     description:
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/raviteja7893055964",
-    resume:"https://drive.google.com/file/d/1SIWfup94gQMgTzLD9lV_D56u33xi0Y8J/view?usp=sharing",
+    resume:"https://drive.google.com/file/d/1kIlSTr8ki2Hv4rn1ncvT88SsMsI90Q2n/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ponnam-raviteja-51429a170/",
    insta: "https://www.instagram.com/t_e_j_a_goud/",
    twitter: "https://x.com/RaviTej23433193"
